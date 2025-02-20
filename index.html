@@ -3,10 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Unit Converter - Scrimba</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="container">
+      <div class="icon-container">
+        <ion-icon class="icon" name="moon-outline"></ion-icon>
+        <ion-icon class="icon hidden" name="sunny-outline"></ion-icon>
+      </div>
+      <div class="card">
+        <div class="card-top">
+          <h1 class="card-title">Metric/Imperial Unit Conversion</h1>
+          <input class="input" id="input-unit" type="text" value="20" />
+          <button id="btn-convert" class="btn">Convert</button>
+        </div>
+        <div class="card-bottom">
+          <div class="card-info">
+            <h3 class="card-heading">Length (Meter/Feet)</h3>
+            <p class="card-description">
+              <span id="current-value">20</span> meters = 65.616 feet
+            </p>
+            <p class="card-description">
+              <span id="current-value">20</span> feet = 6.096 meters
+            </p>
+          </div>
+          <div class="card-info">
+            <h3 class="card-heading">Volume (Liters/Gallons)</h3>
+            <p class="card-description">
+              <span id="current-value">20</span> liters = 5.284 gallons
+            </p>
+            <p class="card-description">
+              <span id="current-value">20</span> gallons = 75.708 liters
+            </p>
+          </div>
+          <div class="card-info">
+            <h3 class="card-heading">Mass (Kiolgrams/Pounds)</h3>
+            <p class="card-description">
+              <span id="current-value">20</span> kilos = 44.092 pounds
+            </p>
+            <p class="card-description">
+              <span id="current-value">20</span> pounds = 9.072 kilos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

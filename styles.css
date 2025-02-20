@@ -30,4 +30,109 @@ html {
 body {
   line-height: 1.5;
   font-size: 1.6rem;
+  background-color: var(--bg-body);
+  padding: 1em;
+  font-family: "Inter", serif;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+/* ============
+   Card Section
+   ============ */
+
+.card {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-top {
+  background-color: var(--bg-card-top);
+  padding: 1em 1em;
+  color: #fff;
+}
+
+.card-bottom {
+  background-color: var(--bg-card-bottom-light);
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-info {
+  background-color: var(--bg-card-section-light);
+  padding: 1em;
+}
+
+/* ============
+   Typography
+   ============ */
+
+.card-title {
+  font-size: 3rem;
+}
+
+.card-heading {
+  margin-bottom: 0.5em;
+  font-size: 1.6rem;
+  color: var(--card-heading-light);
+}
+
+.card-description {
+  color: var(--card-text-light);
+}
+
+.card-info .card-description:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+
+ion-icon {
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: 0.2em;
+  color: var(--bg-card-top);
+  --ionicon-stroke-width: 45px;
+  background-color: #fff;
+}
+
+.input {
+  display: inline-block;
+  font-size: 5.8rem;
+  margin: 0.35em;
+  text-align: center;
+  background-color: var(--bg-card-top);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  max-width: 117px;
+  font-family: inherit;
+  font-weight: 800;
+}
+
+.btn {
+  display: block;
+  font-family: inherit;
+  margin: 0 auto;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: inherit;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
 }
