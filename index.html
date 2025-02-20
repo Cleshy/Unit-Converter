@@ -15,14 +15,15 @@
   </head>
   <body>
     <div class="container">
+      <p class="error-message">Please enter a valid number!</p>
       <div class="icon-container">
-        <ion-icon class="icon" name="moon-outline"></ion-icon>
-        <ion-icon class="icon hidden" name="sunny-outline"></ion-icon>
+        <ion-icon class="icon icon-dark" name="moon-sharp"></ion-icon>
+        <ion-icon class="icon icon-light hidden" name="sunny-sharp"></ion-icon>
       </div>
       <div class="card">
         <div class="card-top">
           <h1 class="card-title">Metric/Imperial Unit Conversion</h1>
-          <input class="input" id="input-el" type="number" min="0" />
+          <input class="input" id="input-el" type="number" min="1" value="20" />
           <button id="convert-btn" class="btn">Convert</button>
         </div>
         <div class="card-bottom">
