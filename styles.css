@@ -1,3 +1,20 @@
+:root {
+  --bg-body: #1c1c1c;
+  --bg-card-top: #6943ff;
+
+  /* Light version */
+  --bg-card-bottom-light: #f4f4f4;
+  --bg-card-section-light: #ffffff;
+  --card-heading-light: #5a537b;
+  --card-text-light: #353535;
+
+  /* Dark version */
+  --bg-card-bottom-dark: #1f2937;
+  --bg-card-section-dark: #273549;
+  --card-heading-dark: #ccc1ff;
+  --card-text-dark: #f2f2f4;
+}
+
 *,
 *::before,
 *::after {
