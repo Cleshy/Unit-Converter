@@ -22,35 +22,41 @@
       <div class="card">
         <div class="card-top">
           <h1 class="card-title">Metric/Imperial Unit Conversion</h1>
-          <input class="input" id="input-unit" type="text" value="20" />
-          <button id="btn-convert" class="btn">Convert</button>
+          <input class="input" id="input-el" type="number" min="0" />
+          <button id="convert-btn" class="btn">Convert</button>
         </div>
         <div class="card-bottom">
           <div class="card-info">
             <h3 class="card-heading">Length (Meter/Feet)</h3>
             <p class="card-description">
-              <span id="current-value">20</span> meters = 65.616 feet
+              <span class="input-value">20</span> meters =
+              <span data-unit="feet" class="conversion">65.616</span> feet
             </p>
             <p class="card-description">
-              <span id="current-value">20</span> feet = 6.096 meters
+              <span class="input-value">20</span> feet =
+              <span data-unit="meter" class="conversion">6.096</span> meters
             </p>
           </div>
           <div class="card-info">
             <h3 class="card-heading">Volume (Liters/Gallons)</h3>
             <p class="card-description">
-              <span id="current-value">20</span> liters = 5.284 gallons
+              <span class="input-value">20</span> liters =
+              <span data-unit="gallon" class="conversion">5.284</span> gallons
             </p>
             <p class="card-description">
-              <span id="current-value">20</span> gallons = 75.708 liters
+              <span class="input-value">20</span> gallons =
+              <span data-unit="liter" class="conversion">75.708</span> liters
             </p>
           </div>
           <div class="card-info">
             <h3 class="card-heading">Mass (Kiolgrams/Pounds)</h3>
             <p class="card-description">
-              <span id="current-value">20</span> kilos = 44.092 pounds
+              <span class="input-value">20</span> kilos =
+              <span data-unit="pound" class="conversion">44.092</span> pounds
             </p>
             <p class="card-description">
-              <span id="current-value">20</span> pounds = 9.072 kilos
+              <span class="input-value">20</span> pounds =
+              <span data-unit="kilo" class="conversion">9.072</span> kilos
             </p>
           </div>
         </div>
