@@ -96,6 +96,12 @@ body {
   font-size: 3rem;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card-heading {
   margin-bottom: 0.5em;
   font-size: 1.6rem;
@@ -123,7 +129,6 @@ ion-icon {
   padding: 0.3em;
   color: var(--bg-card-top);
   background-color: #fff;
-  cursor: pointer;
 }
 
 .icon-dark {
@@ -139,7 +144,7 @@ ion-icon {
 .input {
   display: inline-block;
   font-size: 5.8rem;
-  margin: 0.35em;
+  margin: 0.2em 0.35em 0.35em 0.35em;
   text-align: center;
   background-color: var(--bg-card-top);
   border: 2px solid #fff;
@@ -162,6 +167,12 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.input-label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0.75em;
+}
+
 .btn {
   display: block;
   font-family: inherit;
@@ -171,7 +182,14 @@ input[type="number"] {
   border-radius: 5px;
   font-size: inherit;
   background-color: #fff;
-  font-weight: 500;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mode-toggler {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
 
 /* ============

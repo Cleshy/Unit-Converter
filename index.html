@@ -14,20 +14,37 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <p class="error-message">Please enter a valid number!</p>
+    <main class="container">
+      <p class="error-message" role="alert" aria-live="polite"></p>
       <div class="icon-container">
-        <ion-icon class="icon icon-dark" name="moon-sharp"></ion-icon>
-        <ion-icon class="icon icon-light hidden" name="sunny-sharp"></ion-icon>
+        <button
+          aria-label="Enable dark mode"
+          aria-pressed="false"
+          class="mode-toggler"
+        >
+          <ion-icon class="icon" name="moon-sharp"></ion-icon>
+          <ion-icon class="icon hidden" name="sunny-sharp"></ion-icon>
+        </button>
       </div>
       <div class="card">
         <div class="card-top">
           <h1 class="card-title">Metric/Imperial Unit Conversion</h1>
-          <input class="input" id="input-el" type="number" min="1" value="20" />
+          <div class="input-container">
+            <label for="input-el" class="input-label">Enter a number:</label>
+            <input
+              class="input"
+              id="input-el"
+              type="number"
+              min="1"
+              value="20"
+              max="5000"
+              step="1"
+            />
+          </div>
           <button id="convert-btn" class="btn">Convert</button>
         </div>
         <div class="card-bottom">
-          <div class="card-info">
+          <section class="card-info">
             <h3 class="card-heading">Length (Meter/Feet)</h3>
             <p class="card-description">
               <span class="input-value">20</span> meters =
@@ -37,7 +54,7 @@
               <span class="input-value">20</span> feet =
               <span data-unit="meter" class="conversion">6.096</span> meters
             </p>
-          </div>
+          </section>
           <div class="card-info">
             <h3 class="card-heading">Volume (Liters/Gallons)</h3>
             <p class="card-description">
@@ -62,7 +79,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
     <!-- Ionicons -->
     <script
       type="module"
